@@ -1,0 +1,38 @@
+{
+  "name": "cost-guard",
+  "version": "1.0.0",
+  "description": "AI 智能体成本控制系统",
+  "main": "cost-control.js",
+  "bin": {
+    "cost-control": "./cost-control.js"
+  },
+  "scripts": {
+    "start": "node cost-control.js",
+    "serve": "node web/server.js",
+    "install-deps": "npm install && npm install express --prefix web",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "ai",
+    "cost",
+    "control",
+    "token",
+    "tracking"
+  ],
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "express": "^4.18.2",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}

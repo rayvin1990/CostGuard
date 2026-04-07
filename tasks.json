@@ -1,0 +1,240 @@
+{
+  "project": "CostGuard",
+  "version": "v1.0",
+  "created": "2026-03-31T17:48:00+08:00",
+  "tasks": {
+    "week1": {
+      "name": "第 1 周 - 核心功能 + API 集成",
+      "deadline": "2026-04-06",
+      "owner": "小卡，小马",
+      "items": [
+        {
+          "id": "W1-001",
+          "title": "CLI 框架搭建",
+          "description": "创建 cost-control.js 入口文件，配置 package.json，实现基本命令结构",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "2h"
+        },
+        {
+          "id": "W1-002",
+          "title": "OpenAI API 适配器",
+          "description": "实现 OpenAI API 数据读取，解析响应头和日志",
+          "assignee": "小卡",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "4h"
+        },
+        {
+          "id": "W1-003",
+          "title": "Claude API 适配器",
+          "description": "实现 Claude API 数据读取，解析响应头和日志",
+          "assignee": "小卡",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "4h"
+        },
+        {
+          "id": "W1-004",
+          "title": "成本计算模块",
+          "description": "实现基于价格配置的成本计算逻辑",
+          "assignee": "小卡",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "3h"
+        },
+        {
+          "id": "W1-005",
+          "title": "数据加密模块",
+          "description": "实现 AES-256 加密/解密，保护本地数据",
+          "assignee": "小卡",
+          "status": "pending",
+          "priority": "medium",
+          "estimated": "3h"
+        },
+        {
+          "id": "W1-006",
+          "title": "初始化命令",
+          "description": "实现 cost-control init 命令，创建配置文件",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "2h"
+        },
+        {
+          "id": "W1-007",
+          "title": "Dashboard 命令",
+          "description": "实现 cost-control dashboard 命令，显示成本概览",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "3h"
+        }
+      ]
+    },
+    "week2": {
+      "name": "第 2 周 - 异常预警 + 动态算法",
+      "deadline": "2026-04-13",
+      "owner": "小卡",
+      "items": [
+        {
+          "id": "W2-001",
+          "title": "动态异常检测",
+          "description": "实现 7 天平均值×2 动态算法",
+          "assignee": "小卡",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "4h"
+        },
+        {
+          "id": "W2-002",
+          "title": "Alert 命令",
+          "description": "实现 cost-control alert 命令，显示异常消耗",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "2h"
+        },
+        {
+          "id": "W2-003",
+          "title": "预警通知",
+          "description": "实现异常预警通知机制",
+          "assignee": "小卡",
+          "status": "pending",
+          "priority": "medium",
+          "estimated": "2h"
+        }
+      ]
+    },
+    "week3": {
+      "name": "第 3 周 - 自动止损 + 新手引导",
+      "deadline": "2026-04-20",
+      "owner": "小马",
+      "items": [
+        {
+          "id": "W3-001",
+          "title": "自动止损控制器",
+          "description": "实现预算上限检查和自动暂停功能",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "4h"
+        },
+        {
+          "id": "W3-002",
+          "title": "Stop/Start 命令",
+          "description": "实现 cost-control stop/start 命令",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "2h"
+        },
+        {
+          "id": "W3-003",
+          "title": "新手引导",
+          "description": "实现 cost-control guide 交互式引导",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "4h"
+        },
+        {
+          "id": "W3-004",
+          "title": "预算设置",
+          "description": "实现 cost-control budget set 命令",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "medium",
+          "estimated": "2h"
+        }
+      ]
+    },
+    "week4": {
+      "name": "第 4 周 - 数据隐私 + 配置完善",
+      "deadline": "2026-04-27",
+      "owner": "小卡，小马",
+      "items": [
+        {
+          "id": "W4-001",
+          "title": "配置管理",
+          "description": "完善配置文件结构，支持多 Agent 配置",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "medium",
+          "estimated": "3h"
+        },
+        {
+          "id": "W4-002",
+          "title": "安全审计",
+          "description": "实现安全审计日志，追踪所有操作",
+          "assignee": "小卡",
+          "status": "pending",
+          "priority": "medium",
+          "estimated": "3h"
+        },
+        {
+          "id": "W4-003",
+          "title": "文档完善",
+          "description": "编写完整使用文档和 API 文档",
+          "assignee": "mia",
+          "status": "pending",
+          "priority": "medium",
+          "estimated": "4h"
+        }
+      ]
+    },
+    "week5": {
+      "name": "第 5 周 - 测试和发布",
+      "deadline": "2026-05-04",
+      "owner": "全员",
+      "items": [
+        {
+          "id": "W5-001",
+          "title": "单元测试",
+          "description": "为所有模块编写单元测试",
+          "assignee": "小卡，小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "8h"
+        },
+        {
+          "id": "W5-002",
+          "title": "集成测试",
+          "description": "端到端测试所有功能",
+          "assignee": "小卡，小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "4h"
+        },
+        {
+          "id": "W5-003",
+          "title": "发布准备",
+          "description": "准备 npm 发布，编写 README",
+          "assignee": "小马",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "2h"
+        },
+        {
+          "id": "W5-004",
+          "title": "v1.0 发布",
+          "description": "正式发布 v1.0 版本",
+          "assignee": "nia",
+          "status": "pending",
+          "priority": "high",
+          "estimated": "1h"
+        }
+      ]
+    }
+  },
+  "status": {
+    "overall": "in_progress",
+    "week1_progress": 0,
+    "week2_progress": 0,
+    "week3_progress": 0,
+    "week4_progress": 0,
+    "week5_progress": 0
+  },
+  "last_updated": "2026-03-31T17:48:00+08:00"
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💰 CostGuard - AI 成本控制</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 CostGuard</h1>
+      <p class="subtitle">AI 智能体成本控制系统</p>
+    </header>
+
+    <main>
+      <!-- 成本概览 -->
+      <section class="card">
+        <h2>📊 成本概览</h2>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-label">今日</div>
+            <div class="stat-value" id="todayCost">$0.00</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">本周</div>
+            <div class="stat-value" id="weekCost">$0.00</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">本月</div>
+            <div class="stat-value" id="monthCost">$0.00</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 预算设置 -->
+      <section class="card">
+        <h2>⚙️ 预算设置</h2>
+        <div class="budget-form">
+          <div class="input-row">
+            <label>日预算 ($)</label>
+            <input type="number" id="dailyBudget" value="10" step="1" min="1">
+          </div>
+          <div class="input-row">
+            <label>月预算 ($)</label>
+            <input type="number" id="monthlyBudget" value="30" step="10" min="10">
+          </div>
+          <div class="usage-bar">
+            <div class="usage-fill" id="usageFill"></div>
+          </div>
+          <div class="usage-text" id="usageText">使用 0%</div>
+          <button id="saveBudgetBtn" class="btn-primary">💾 保存设置</button>
+        </div>
+      </section>
+
+      <!-- Agent 管理 -->
+      <section class="card">
+        <h2>🤖 Agent 状态</h2>
+        <div id="agentList" class="agent-list">
+          <p class="loading">加载中...</p>
+        </div>
+      </section>
+
+      <!-- 异常告警 -->
+      <section class="card">
+        <h2>🚨 异常告警</h2>
+        <div id="alerts" class="alerts">
+          <p class="success">✅ 暂无异常</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
